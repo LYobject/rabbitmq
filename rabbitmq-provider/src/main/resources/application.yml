@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: rabbitmq-provider
+  rabbitmq:
+    host: localhost
+    port: 5672
+    virtual-host: /
+    username: admin
+    password: 123
+    #???????????(Exchange)
+    publisher-confirm-type: correlated
+    #??????????(Queue)
+    publisher-returns: true
+server:
+  port: 8021
+
